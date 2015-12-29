@@ -2,7 +2,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-      xmlns:h="http://xmlns.jcp.org/jsf/html">
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
 
     <h:head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -15,11 +16,51 @@
 
 
         <div id="top" class="top">
-            <ui:insert name="top">Top</ui:insert>
+            <ui:insert name="top">
+                <h:form id="bottomform">
+                    <div id="widgetBar">
+
+
+                        <p:commandButton  class ="headerWidget" value="Esci" action="#{loginController.logout()}" ajax="false"></p:commandButton>
+
+                        <div class="tappo">
+
+                        </div>
+                        <div id="logoTextAdmin">
+                            <h:outputLabel id="logoTextAdmin" value="Animal Store"></h:outputLabel><br></br>
+                            <h:outputLabel class="sottoTitolo" value="Pannello Amministratore"></h:outputLabel>
+                        </div>
+
+
+                    </div>
+                    <div id="logo">
+                        <p:commandLink action="/amministrazione/adminHome" ajax="false">
+
+                            <h:graphicImage class="logo" url="/resources/logo/logo.png"></h:graphicImage>
+                        </p:commandLink>
+                    </div>
+                </h:form>
+            </ui:insert>
         </div>
         <div>
             <div id="left">
-                <ui:insert name="left">Left</ui:insert>
+                <ui:insert name="left">
+                    <h:form>
+                        <p:menu>
+                            <p:submenu label="Gestione Categorie">
+                                <p:menuitem value="Lista" icon="fa fa-list"/>
+                                <p:menuitem value="Nuova"  icon="fa fa-plus"/>
+                            </p:submenu>
+                            <p:submenu label="Gestione Sotto Categorie">
+                                <p:menuitem value="Delete"  ajax="false" icon="ui-icon-close"/>
+                            </p:submenu>
+                            <p:submenu label="Gestione Prodotti">
+                                <p:menuitem value="External" url="http://www.primefaces.org" icon="ui-icon-home"/>
+                                <p:menuitem value="Internal"  icon="ui-icon-star"/>
+                            </p:submenu>
+                        </p:menu>
+                    </h:form>
+                </ui:insert>
             </div>
             <div id="content" class="left_content">
                 <ui:insert name="content">Content</ui:insert>

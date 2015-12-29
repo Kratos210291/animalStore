@@ -9,7 +9,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <h:outputStylesheet name="./css/default.css"/>
         <h:outputStylesheet name="./css/cssLayout.css"/>
-        <title>Facelets Template</title>
+        <title>Animal Store</title>
     </h:head>
 
     <h:body>
@@ -23,11 +23,10 @@
 
                         <p:commandButton  class="headerWidget" value="Accedi" action="/login" ajax="false"></p:commandButton>
 
-                        <div id="logoText">
+                         <div id="logoText">
                         <h:outputLabel id="logoText" value="Animal Store"></h:outputLabel>
                     </div>
                     </div>
-                    
                     <div id="logo">
 
                         <p:commandLink action="/index" ajax="false">
@@ -38,14 +37,11 @@
                 </h:form>
             </ui:insert>
         </div>
-        <div>
-            <div id="left">
-                <ui:insert name="left">Left</ui:insert>
-            </div>
-            <div id="content" class="left_content">
-                <ui:insert name="content">Content</ui:insert>
-            </div>
+
+        <div id="content" class="center_content">
+            <ui:insert name="content">Content</ui:insert>
         </div>
+
         <div id="bottom">
             <ui:insert name="bottom">Bottom</ui:insert>
         </div>

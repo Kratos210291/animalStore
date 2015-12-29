@@ -2,22 +2,45 @@
     height: 50px;
     width: 850px;
     float: right;
-    background: #036fab;
+    background:  dodgerblue;
+}
+.logo{
+    margin-top: 15px;
+    height: 160px;
+    width: 180px;
+    float: left;
+   
 }
 #logo {
-    height: 155px;
-    width: 155px;
+    height: 100px;
+    width: 100px;
     float: left;
     margin-left: 30px;
     margin-top: -20px;
 }
 #logoText {
     float: left;
+    margin: 55px 0 0 70px;
+    /* font styles apply to text within alt tags */
+    font-family: 'American Typewriter', Courier, monospace;
+    font-size: 50px;
+    color:white;
+}
+#logoTextAdmin {
+    float: left;
     margin: 20px 0 0 70px;
     /* font styles apply to text within alt tags */
     font-family: 'American Typewriter', Courier, monospace;
     font-size: 50px;
-    color: #333;
+    color:white;
+}
+.sottoTitolo{
+    
+   
+    /* font styles apply to text within alt tags */
+    font-family: 'American Typewriter', Courier, monospace;
+    font-size: 25px;
+    color:white;
 }
 
 .headerWidget {
@@ -26,11 +49,19 @@
     font-size: small;
     float: right;
     line-height: 25px;
-    background: #036fab;
+    background: sandybrown ;
+}
+.tappo{
+    width: 194px;
+    margin: 20px 2px;
+    font-size: small;
+    float: right;
+    line-height: 25px;
+    background:dodgerblue ;
 }
 #top {
     position: relative;
-    background-color: #036fab;
+    background-color: dodgerblue;
     color: white;
     padding: 5px;
     height: 150px;
@@ -48,8 +79,9 @@
     float: left;
     background-color: #ece3a5;
     padding: 5px;
-    width: 150px;
+    width: 180px;
 }
+
 
 #right {
     float: right;
@@ -67,13 +99,13 @@
 .left_content {
     background-color: #dddddd;
     padding: 5px;
-    margin-left: 170px;
+    margin-left: 200px;
 }
 
 .right_content {
     background-color: #dddddd;
     padding: 5px;
-    margin: 0px 170px 0px 170px;
+    margin: 0px 140px 0px 170px;
 }
 
 #top a:link, #top a:visited {
